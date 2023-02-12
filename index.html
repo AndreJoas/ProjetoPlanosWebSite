@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+<link rel="stylesheet" href="pages/estilos/HomeStyles.css">
+<title>Frontend Mentor | Multi-step form</title>
+
+</head>
+
+<body>
+  <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px;">
+
+    <div class="nav" style="background-image: url(pages/images/bg-sidebar-desktop.svg); width: 18%;">
+      <div class="on">
+        <button style="border-radius:50%; height: 30px; width: 30px;" class="bt1">1</button>
+        <div class="text">
+          <h5>STEP1</h5>
+          <h4>YOUR INFO</h4>
+        </div>
+      </div>
+      <!-- --- -->
+      <div class="on">
+        <button style="border-radius:50%; height: 30px; width: 30px;" class="bt1">1</button>
+        <div class="text">
+          <h5>STEP2</h5>
+          <h4>SELECT PLAN</h4>
+        </div>
+      </div>
+      <!------->
+      <div class="on">
+        <button style="border-radius:50%; height: 30px; width: 30px;" class="bt1">1</button>
+        <div class="text">
+          <h5>STEP3</h5>
+          <h4>ADD-ONS</h4>
+        </div>
+      </div>
+      <!------  -->
+      <div class="on">
+        <button style="border-radius:50%; height: 30px; width: 30px;" class="bt1">1</button>
+        <div class="text">
+          <h5>STEP4</h5>
+          <h4>SUMMARY</h4>
+        </div>
+      </div>
+    </div>
+    <div class="personal">
+      <div class="info">
+        <h1> Personal Info</h1>
+        <p>Please provide your name address, add phone number</p>
+
+        <!-- faz com que os campos do forms seja obrigatorios -->
+        <form class="forms" action="pages/Seleçao_Planos/selecao.html"> 
+          <div class="f1">
+            <h4>Name</h4>
+            <input type="text" class="nom" name="name"  placeholder="your name" required> 
+          </div>
+          <div class="f1">
+            <h4>Email Address</h4>
+            <input type="text" name="email" class="ip" placeholder="your email" required>
+          </div>
+          <div class="f1">
+            <h4>Phone Number</h4>
+            <input type="text" class="ip" name="number" placeholder="you name" required>
+          </div>
+         <button class="bt2">Next Step</button>
+          </a>
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>
