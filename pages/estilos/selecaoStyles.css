@@ -73,3 +73,41 @@ h5{
     color: #000000;
    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:580px){
+    .divisao{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       margin-top: -0.1rem;
+   }
+   .nav{
+       display: flex;
+       justify-content: space-around;
+       align-items: start;
+       flex-direction: row;
+       height: 8rem;
+       background-color: #2e57f7;
+       max-width: max-content;
+       margin-left: -1.3rem;
+   }
+   .on{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+   }
+   }
+   
