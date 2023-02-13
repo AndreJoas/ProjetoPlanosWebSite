@@ -84,7 +84,20 @@ h5{
 
 
 
-
+@keyframes info {
+    0%{
+        background: #fff;
+        color:#000000;
+    }
+    50%{
+        background:#2e57f7;
+        color:#fff
+    }
+    100%{
+        background: #18308f;
+        color:#fff;
+    }
+}
 @media (max-width:580px){
     .divisao{
        display: flex;
