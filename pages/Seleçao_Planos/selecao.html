@@ -1,47 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/selecaoStyles.css">
+    <link rel="stylesheet" href="../estilos/back.js">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="divisao" style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 40px;">
+    <div class="divisao" style="display: flex; border-radius: 40px;flex-direction: row; flex-wrap: wrap; gap: 40px;">
         <div class="nav" style="background-image: url(../../pages/images/bg-sidebar-desktop.svg);">
-          <div class="on">
-            <a href="../../index.html"><button style="border-radius:50%; height: 30px; width: 30px;" class="bt1">1</button></a>
-            <div class="text">
-              <h5>STEP1</h5>
-              <h4 class="fo">YOUR INFO</h4>
+            <div class="on">
+                <a href="../../index.html"><button style="border-radius:50%; height: 30px; width: 30px;"
+                        class="bt1">1</button></a>
+                <div class="text">
+                    <h5>STEP1</h5>
+                    <h4 class="fo">YOUR INFO</h4>
+                </div>
             </div>
-          </div>
-          <!-- --- -->
-          <div class="on">
-            <a href="../Seleçao_Planos/selecao.html"><button style="border-radius:50%; height: 30px; width: 30px; animation: info linear infinite 2s;" class="bt1">2</button></a>
-            <div class="text">
-              <h5>STEP2</h5>
-              <h4 class="fo">SELECT PLAN</h4>
+            <!-- --- -->
+            <div class="on">
+                <a href="../Seleçao_Planos/selecao.html"><button
+                        style="border-radius:50%; height: 30px; width: 30px; animation: info linear infinite 2s;"
+                        class="bt1">2</button></a>
+                <div class="text">
+                    <h5>STEP2</h5>
+                    <h4 class="fo">SELECT PLAN</h4>
+                </div>
             </div>
-          </div>
-          <!------->
-          <div class="on">
-            <a><button style="border-radius:50%; height: 30px; width: 30px;" class="bt1">3</button></a>
-            <div class="text">
-              <h5>STEP3</h5>
-              <h4 class="fo">ADD-ONS</h4>
+            <!------->
+            <div class="on">
+                <a><button style="border-radius:50%; height: 30px; width: 30px;" class="bt1">3</button></a>
+                <div class="text">
+                    <h5>STEP3</h5>
+                    <h4 class="fo">ADD-ONS</h4>
+                </div>
             </div>
-          </div>
-          <!------  -->
-          <div class="on">
-            <button style="border-radius:50%; height: 30px; width: 30px;" class="bt1">4</button>
-            <div class="text">
-              <h5>STEP4</h5>
-              <h4 class="fo">SUMMARY</h4>
+            <!------  -->
+            <div class="on">
+                <button style="border-radius:50%; height: 30px; width: 30px;" class="bt1">4</button>
+                <div class="text">
+                    <h5>STEP4</h5>
+                    <h4 class="fo">SUMMARY</h4>
+                </div>
             </div>
-          </div>
+        </div>
+        <div  id="myID">
+            <h1>Select your plan</h1>
+            <p>You hace the option of monthy or billing</p>
+            <div class="cards">
+                <div class="card">
+                    <div><img src="../images/icon-arcade.svg" alt=""></div>
+                    <div class="text">
+                        <h5 id="idText">Arcade</h5>
+                        <h4 class="fo">$9/mo</h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <div><img src="../images/icon-advanced.svg" alt=""></div>
+                    <div class="text">
+                        <h5>Advance</h5>
+                        <h4 class="fo">$12/mo</h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <div><img src="../images/icon-pro.svg" alt=""></div>
+                    <div class="text">
+                        <h5>Pro</h5>
+                        <h4 class="fo">$15/mo</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="divBotao">
+                <button type="button" id="botaoNight" onClick="Mycolor()">Nigth</button>
+                <button onClick="Mycolor2()" id="botaoLigth">Ligth</button>
+
+                
+            </div>
         </div>
     </div>
+
+    <script type='text/javascript'>
+        function Mycolor() {
+            var element = document.getElementById("myID");
+            var element2 = document.getElementById("idText");
+            var element3 = document.getElementById("botaoLigth");
+
+            var elem = document.getElementById("botaoNight");
+            elem.style.backgroundColor="gray";
+            elem.style.color="#fff";
+            element.style.backgroundColor = 'gray';
+            element.style.color = '#fff';
+            element3.style.backgroundColor='#fff';
+            element3.style.color='#000000';
+        }
+        function Mycolor2() {
+            var element = document.getElementById("myID");
+            var elementobt = document.getElementById("botaoNight")
+            element.style.backgroundColor = '#fff',
+            element.style.color = '#000000';
+            elementobt.style.backgroundColor="#000000";
+            elementobt.style.color="#fff";
+        }
+
+
+    </script>
 </body>
+
 </html>
