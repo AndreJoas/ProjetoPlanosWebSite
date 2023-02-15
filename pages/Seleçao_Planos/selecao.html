@@ -33,7 +33,7 @@
             </div>
             <!------->
             <div class="on">
-                <a><button style="border-radius:50%; height: 30px; width: 30px;" class="bt1">3</button></a>
+                <a href="step03.html"><button style="border-radius:50%; height: 30px; width: 30px;" class="bt1">3</button></a>
                 <div class="text">
                     <h5>STEP3</h5>
                     <h4 class="fo">ADD-ONS</h4>
@@ -51,22 +51,24 @@
         <div  id="myID">
             <h1>Select your plan</h1>
             <p>You hace the option of monthy or billing</p>
+            <p>Clique sobre seu plano</p>
+            <button  id="botao" onClick="Desmarcar()">Desmarcar planos selecionados</button>
             <div class="cards">
-                <div class="card">
+                <div id="card"  onClick="bordar()">
                     <div><img src="../images/icon-arcade.svg" alt=""></div>
                     <div class="text">
                         <h5 id="idText">Arcade</h5>
                         <h4 class="fo">$9/mo</h4>
                     </div>
                 </div>
-                <div class="card">
+                <div id="card2" onClick="bordar2()">
                     <div><img src="../images/icon-advanced.svg" alt=""></div>
                     <div class="text">
                         <h5>Advance</h5>
                         <h4 class="fo">$12/mo</h4>
                     </div>
                 </div>
-                <div class="card">
+                <div id="card3" onClick="bordar3()">
                     <div><img src="../images/icon-pro.svg" alt=""></div>
                     <div class="text">
                         <h5>Pro</h5>
@@ -75,10 +77,9 @@
                 </div>
             </div>
             <div class="divBotao">
-                <button type="button" id="botaoNight" onClick="Mycolor()">Nigth</button>
+                <button type="button" onClick="Mycolor()" id="botaoNight">Nigth</button>
                 <button onClick="Mycolor2()" id="botaoLigth">Ligth</button>
-
-                
+                <button class="bt2"><a href="step03.html">Next Step</a></button>
             </div>
         </div>
     </div>
@@ -90,23 +91,45 @@
             var element3 = document.getElementById("botaoLigth");
 
             var elem = document.getElementById("botaoNight");
-            elem.style.backgroundColor="gray";
+            elem.style.border="1px solid #000000";
             elem.style.color="#fff";
-            element.style.backgroundColor = 'gray';
+            element.style.backgroundColor = '#92a4ec';
             element.style.color = '#fff';
             element3.style.backgroundColor='#fff';
             element3.style.color='#000000';
         }
         function Mycolor2() {
             var element = document.getElementById("myID");
-            var elementobt = document.getElementById("botaoNight")
+            var elementobt = document.getElementById("botaoNight");
             element.style.backgroundColor = '#fff',
             element.style.color = '#000000';
             elementobt.style.backgroundColor="#000000";
             elementobt.style.color="#fff";
         }
 
-
+        function bordar(){
+            var card1 = document.getElementById("card");
+            card1.style.border="solid 2px #000000";
+            
+        }
+        function bordar2(){
+            var card2 = document.getElementById("card2");
+            card2.style.border="solid 2px #000000";
+            
+        }
+        function bordar3(){
+            var card3 = document.getElementById("card3");
+            card3.style.border="solid 2px #000000";
+            
+        }
+        function Desmarcar(){
+            var desmaca = document.getElementById("card");
+            var desmaca1 = document.getElementById("card2");
+            var desmaca2 = document.getElementById("card3");
+            desmaca.style.border="none";
+            desmaca1.style.border="none";
+            desmaca2.style.border="none";
+        }
     </script>
 </body>
 

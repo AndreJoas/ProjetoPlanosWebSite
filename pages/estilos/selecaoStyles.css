@@ -30,6 +30,10 @@ body{
     border-radius: 40px 0 0 40px;
     
 }
+a{
+    color: #fff;
+    text-decoration: none;
+}
 .on{
     display: flex;
     flex-direction: row;
@@ -46,7 +50,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items:center;
     max-width: max-content;
 
 }
@@ -81,9 +85,9 @@ h5{
     justify-content: start;
     align-items: center;
     gap: 0.2rem;
-    max-width: 100%;
+    max-width: 50%;
     height: 35rem;
-    width: max-content;
+    width: 100%;
     padding: 0.4rem;
     transition: 1s;
     border-radius: 0 40px 40px 0;
@@ -92,15 +96,124 @@ h5{
 .cards{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+    max-width:100%; 
+    width: 80%;
+    height: 25.8rem;
+    cursor: pointer; 
+}
+#card:hover{
+    background: #eb5a5a;
+    
+}
+#card2:hover{
+    background: #0cd487;
+}
+#card3:hover{
+    background: #322929;
+}
+#card{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:40px;
     max-width: 100%;
-    height: 25.8rem;
-    border:solid red 1px;
+    transition: 1s;
+    width:100%;
+    
+}
+#card2{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    transition: 1s;
+    width:100%;
+    
+}#card3{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    transition: 1s;
+    width:100%;
     
 }
 
+p{
+    margin-top: -1rem;
+}
+h1{
+    margin-top: -0.5rem;
+
+}
+#botao{
+    margin-top: -0.5rem;
+    background-color: #18308f;
+    color:#fff;
+    border: none;
+    border-radius: 10px;
+    width: 30%;
+    height: 1.2rem;
+    cursor: pointer;
+
+}
+.divBotao{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    transition: 1s;
+    flex-wrap: wrap;
+}
+#botaoLigth{
+    width: 17%;
+    height: 2.4rem;
+    outline: none;
+    color: #fff;
+    background: #18308f;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: 800;
+    transition: 0.5s;
+}
+#botaoNight{
+    width: 17%;
+    height: 2.4rem;
+    outline: none;
+    color: #fff;
+    background: #18308f;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: 800;
+    transition: 0.5s;
+}
+.bt2{
+    width: 17%;
+    height: 2.4rem;
+    outline: none;
+    color: #fff;
+    background: #18308f;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: 800;
+    transition: 0.5s;
+}
+
+.bt2:hover{
+    background: #133bdf;
+}
 
 
 
@@ -122,6 +235,12 @@ h5{
     }
 }
 @media (max-width:580px){
+    .cards{
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:580px){
     .divisao{
        display: flex;
        justify-content: center;
@@ -130,16 +249,25 @@ h5{
        margin-top: -0.1rem;
        
    }
+   #botao{
+    width: 100%;
+   }.cards{
+    margin-top: 1rem;
+   }
    .nav{
        display: flex;
        justify-content: space-around;
        align-items: start;
        flex-direction: row;
        height: 8rem;
+       width: 100%;
        background-color: #2e57f7;
        max-width: max-content;
        margin-left: -1.3rem;
        border-radius: 0;
+    }
+    .divBotao{
+        margin-top: 1rem;
     }
    .on{
        display: flex;
@@ -148,8 +276,15 @@ h5{
        flex-direction: column;
    }
    #myID{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    max-width: max-content;
     margin-top: -2rem;
-    border-radius: 0;
+    border-radius: 0 0 40px 40px;
+    height: 39rem;
+
 
    }
    }
