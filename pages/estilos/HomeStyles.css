@@ -149,6 +149,16 @@ h4{
     border-radius: 7px;
     border: 1px solid;
 }
+.divBotao{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    transition: 1s;
+    flex-wrap: wrap;
+}
 .bt2{
     margin-left: 15.5rem;
     width: 30%;

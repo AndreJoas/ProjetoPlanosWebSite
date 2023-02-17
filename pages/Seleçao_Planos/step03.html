@@ -51,39 +51,83 @@
         <div class="pickAdd">
             <h1>Pick add-ons</h1>
             <p>add-ons enhace your gamming experience</p>
+            <p>Marcou errado, Recarregue a pagina</p>
             <div class="add">
                 <div class="ret1">
-                    <input type="checkbox" value=1 name="" id="online">
+                    <input onclick="Clicar()" type="checkbox" value=1 name="primeiro" id="online">
                     <div class="ad">
                         <h3>Serviço Online</h3>
                         <p>Acesso a multiplos jogos (^__^)</p>
                     </div>
-                    <h5 value=1>+ $1/mo</h5>
+                    <h5 class="preco" value=1>+ $1/mo</h5>
                 </div>
-
                 <div class="ret2">
-                    <input type="checkbox" value=2 name="" id="online">
+                    <input onclick="Clicar2()" type="checkbox" value=2 name="" id="online2">
                     <div class="ad">
                         <h3>Mais Armazenamento</h3>
                         <p>Extra de 1Tb em Nuvem (^__^)</p>
                     </div>
-                    <h5 value=2>+ $2/mo</h5>
+                    <h5 class="preco" value=2>+ $2/mo</h5>
                 </div>
                 <div class="ret3">
-                    <input type="checkbox" value=2 name="" id="online">
+                    <input onclick="Clicar3()" type="checkbox" value=5 name="" id="online3">
                     <div class="ad">
-                        <h3>Serviço Customizado</h3>
-                        <p>Varias opcoes de Themas(^__^)</p>
+                        <h3>Mais Armazenamento</h3>
+                        <p>Extra de 1Tb em Nuvem (^__^)</p>
                     </div>
-                    <h5 value=2>+ $2/mo</h5>
+                    <h5 class="preco" value=5>+ $5/mo</h5>
                 </div>
-                <input type="text" value="" name="" id="resultado" placeholder="seu valor é de:">
-
-                <button class="bt2"><a href="step03.html">Next Step</a></button>
+                <div class="divBotao">
+                    <div style="display: flex;flex-direction: column; align-items: center;justify-content: center;"><h3 style=" color: #fff;">Total a pagar é de: <p style="font-size: 20px; width: 20px; color:#ca125f; margin-top: 0.7rem;" id="resultado" value=""></p></h3><h3 style="margin-top: -2rem;  color: #fff;"> dolores Por mês</h3></div>
+                    <button class="bt2"><a href="step03.html">Next Step</a></button>
+                </div>
             </div>
+
         </div>
     </div>
+    <script>
+        var mes1 = document.getElementById("online").value;
+        var mes2 = document.getElementById("online2").value;
+        var mes3 = document.getElementById("online3").value;
+        var resultado = 0;
+        var lista2 = [mes1, mes2, mes3]
+        var lista1 = [0]
 
+        function Clicar() {
+            lista1.push(lista2[0])
+            resultado += parseInt(lista1[0]+mes1);
+            alert(lista1)
+            alert(resultado)
+            document.getElementById("resultado").innerHTML=resultado;
+        }
+        function Clicar2() {
+            lista1.push(lista2[1])
+            resultado += parseInt(lista1[0]+mes2);
+            alert(lista1)
+            alert(resultado)
+            document.getElementById("resultado").innerHTML=resultado;
+        }
+        function Clicar3() {
+            lista1.push(lista2[2])
+            resultado += parseInt(lista1[0]+mes3);
+            alert(lista1)
+            document.getElementById("resultado").innerHTML=resultado;
+
+        }
+
+        
+
+        
+
+
+        // function somar(mes1, mes2, mes3) {
+        //     lista = [mes1, mes2, mes3]
+        //     for (i in lista) {
+        //         resultado += lista[i]
+        //     }
+
+        // }
+    </script>
 </body>
 
 </html>
