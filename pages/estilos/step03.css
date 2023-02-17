@@ -59,7 +59,7 @@ h5{
     color:rgb(69, 152, 224);
 }
 .preco{
-    margin-left: 5rem;
+    margin-left: 4rem;
 }
 #resultado{
     outline: none;
@@ -116,7 +116,7 @@ h3{
 p{
     margin-top: -1rem;
     color:#bfbfbf;  
-    margin-left: 1rem;
+    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .add{
@@ -127,6 +127,7 @@ p{
     max-width:100%; 
     width: max-content;
     height: 25.8rem;
+    margin-top: -1rem;
     cursor: pointer;
 }
 
@@ -178,6 +179,7 @@ p{
     align-items: center;
     width:100%;
     gap: 100px;
+    margin-top: -2rem;
     transition: 1s;
 }
 .bt2{
@@ -230,9 +232,7 @@ a{
        margin-top: -0.1rem;
        
    }
-   #botao{
-    width: 100%;
-   }.add{
+   .add{
     margin-top: 1rem;
    }
    .nav{
@@ -244,11 +244,17 @@ a{
        width: 100%;
        background-color: #2e57f7;
        max-width: max-content;
-       margin-left: -1.3rem;
+       margin-left: -0.5rem;
        border-radius: 0;
     }
     .divBotao{
         margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        gap: 100px;
+        transition: 1s;
     }
    .on{
        display: flex;
@@ -259,14 +265,15 @@ a{
    .pickAdd{
     display: flex;
     flex-direction: column;
+    margin-left: -1rem;
     justify-content: start;
     align-items: center;
     max-width: max-content;
     margin-top: -2rem;
     border-radius: 0 0 40px 40px;
-    height: 39rem;
-
-
+    height: 38rem;
+   }
+   .add{
+    height: 33rem;
    }
    }
-   
