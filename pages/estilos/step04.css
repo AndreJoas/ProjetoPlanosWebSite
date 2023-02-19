@@ -221,11 +221,11 @@ a{
 }
 @media (max-width:580px){
     .divisao{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-direction: column;
-       margin-top: -0.1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -0.1rem;
        
    }
    .add{
@@ -243,8 +243,10 @@ a{
        margin-left: -0.5rem;
        border-radius: 0;
     }
+    p{
+        text-align: center;
+    }
     .divBotao{
-
         display: flex;
         flex-direction: row;
         justify-content:center;
@@ -265,8 +267,9 @@ a{
     align-items: center;
     max-width: max-content;
     margin-top: -2rem;
+    margin-left: -0.5rem;
     border-radius: 0 0 40px 40px;
-    height: 44rem;
+    height: 46rem;
    }
    .planos{
     margin-top: 1rem;
