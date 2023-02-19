@@ -262,14 +262,14 @@ a{
    .finishing{
     display: flex;
     flex-direction: column;
-    margin-left: -1rem;
     justify-content: start;
     align-items: center;
     max-width: max-content;
     margin-top: -2rem;
-    margin-left: -0.5rem;
+    margin-left: -0.7rem;
     border-radius: 0 0 40px 40px;
     height: 46rem;
+    width: 90%;
    }
    .planos{
     margin-top: 1rem;
