@@ -41,7 +41,7 @@
             </div>
             <!------  -->
             <div class="on">
-                <button style="border-radius:50%; height: 30px; width: 30px;" class="bt1">4</button>
+                <a href="step04.html"><button style="border-radius:50%; height: 30px; width: 30px;" class="bt1">4</button></a>
                 <div class="text">
                     <h5>STEP4</h5>
                     <h4 class="fo">SUMMARY</h4>
@@ -53,12 +53,13 @@
             <p>add-ons enhace your gamming experience</p>
             <p>Marcou errado, Recarregue a pagina</p>
             <div class="add">
-                <div class="ret1">
+                <div id="ret1" onclick=" moveDiv(this) ">
                     <input onclick="Clicar()" type="checkbox" value=1 name="primeiro" id="online">
                     <div class="ad">
                         <h3>Serviço Online</h3>
                         <p>Acesso a multiplos jogos (^__^)</p>
                     </div>
+                    
                     <h5 class="preco" value=1>+ $1/mo</h5>
                 </div>
                 <div class="ret2">
@@ -79,26 +80,14 @@
                 </div>
                 <div class="divBotao">
                     <div style="display: flex;flex-direction: column; align-items: center;justify-content: center;"><h3 style=" color: #fff; ">Total a pagar é de: <p style="font-size: 20px; width: 20px; color:#ca125f; margin-top: -0.3rem;" id="resultado" value=""></p></h3><h3 style="margin-top: -2rem;  color: #fff;"> dolores Por mês</h3></div>
-                    <button class="bt2"><a href="step03.html">Next Step</a></button>
+                    <button class="bt2"><a href="step04.html">Next Step</a></button>
                 </div>
             </div>
-
+            <div id="plano1"></div>
         </div>
     </div>
-    <script src="Funcoes.js">
-       
-        
-
-        
-
-        // function somar(mes1, mes2, mes3) {
-        //     lista = [mes1, mes2, mes3]
-        //     for (i in lista) {
-        //         resultado += lista[i]
-        //     }
-
-        // }
-    </script>
+   
+    <script src="Funcoes.js"></script>
 </body>
 
 </html>

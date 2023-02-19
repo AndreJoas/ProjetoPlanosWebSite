@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../estilos/step04.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="divisao" style="display: flex; border-radius: 40px;flex-direction: row; flex-wrap: wrap; gap: 40px;">
+            <div class="nav" style="background-image: url(../../pages/images/bg-sidebar-desktop.svg);">
+                <div class="on">
+                    <a href="../../index.html"><button style="border-radius:50%; height: 30px; width: 30px;"
+                            class="bt1">1</button></a>
+                    <div class="text">
+                        <h5>STEP1</h5>
+                        <h4 class="fo">YOUR INFO</h4>
+                    </div>
+                </div>
+                <!-- --- -->
+                <div class="on">
+                    <a href="../Seleçao_Planos/selecao.html"><button style="border-radius:50%; height: 30px; width: 30px;"
+                            class="bt1">2</button></a>
+                    <div class="text">
+                        <h5>STEP2</h5>
+                        <h4 class="fo">SELECT PLAN</h4>
+                    </div>
+                </div>
+                <!------->
+                <div class="on">
+                    <a href="step03.html"><button
+                            style="border-radius:50%; height: 30px; width: 30px;"
+                            class="bt1">3</button></a>
+                    <div class="text">
+                        <h5>STEP3</h5>
+                        <h4 class="fo">ADD-ONS</h4>
+                    </div>
+                </div>
+                <!------  -->
+                <div class="on">
+                    <button style="border-radius:50%; height: 30px; width: 30px; animation: info linear infinite 2s;" class="bt1">4</button>
+                    <div class="text">
+                        <h5>STEP4</h5>
+                        <h4 class="fo">SUMMARY</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="finishing">
+                <h1>Terminando</h1>
+                <p>verifique novamente se tudo está bem antes de confirmar</p>
+                <button onclick="sele()"> ver planos</button>
+                <div class="planos">
+                    <div id="plano1">
+                        <!-- <div class="text">
+                            <h3>Arcade(Mês)</h3>
+                            <button id="interesse">Sem interesso</button>
+                        </div>
+                        <button value=9 id="valores">$9/Mês</button> -->
+                    </div>
+                    <div class="plano2">
+                        <div>
+                            <!-- <div class="text">
+                                <h3>Serviço Online(Mês)</h3>
+                                <button id="interesse">Sem interesso</button>
+                            </div>
+                            <button value=3 id="valores">3/Mês</button> -->
+                        </div>
+                        <div>
+                            <!-- <div class="text">
+                                <h3>Armazenamento maior(Mês)</h3>
+                                <button id="interesse">Sem interesso</button>
+                            </div>
+                            <button value=9 id="valores">9/Mês</button> -->
+                        </div>
+                    </div>
+                    <div class="plano1">
+                        <!-- <div class="text">
+                            <h3>Total (por mes)</h3>
+                            <button id="interesse">Sem interesso</button>
+                        </div>
+                        <button value=9 id="valores">$9/Mês</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./Funcoes.js"></script>
+    </body>
+</html>
