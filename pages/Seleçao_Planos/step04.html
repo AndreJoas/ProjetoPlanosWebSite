@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../estilos/step04.css" rel="stylesheet">
+    <link href="../estilos/step03.css" rel="stylesheet">
+
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
@@ -52,13 +54,27 @@
             </div>
         </div>
         <div class="finishing">
-            <h1>Terminando</h1>
+            <h1 style="margin-top: -0.7rem;">Terminando</h1>
             <p>verifique novamente se tudo está bem antes de confirmar</p>
             <p>Remarque novamente os planos aqui</p>
-            <button onclick="most()" id="ler">Serviço Online</button>
-            <button onclick="most2()" id="ler2">Mais Armazenamento</button>
-            <button onclick="most3()" id="ler3">Mais Armazenamento(Bonus)</button>
-            <button><a href="./step04.html">reset</a></button>
+            <div class="bconfirm">
+                <div class="opt">
+                    <button onclick="most()" id="ler">Serviço Online</button>
+                    <button onclick="most2()" id="ler2">Mais Armazenamento</button>
+                    <button onclick="most3()" id="ler3">Mais Armazenamento(Bonus)</button>
+                </div>
+                <div class="divBotao" style="margin-top: -0.6rem;">
+                    <div style="display: flex;flex-direction: column; align-items: center;justify-content: center;">
+                        <h3 style=" color: #fff; ">Total a pagar é de: <p
+                                style="font-size: 20px; width: 20px; color:#ca125f; margin-top: -0.3rem;" id="resultado2"
+                                value=""></p>
+                        </h3>
+                        <h3 style="margin-top: -2rem;  color: #fff;"> dolores Por mês</h3>
+                    </div>
+                    <button><a href="./step04.html">reset</a></button>
+                    
+                </div>
+            </div>
             <div class="planos">
                 <div id="plano1">
 
@@ -70,17 +86,9 @@
 
                 </div>
             </div>
+            <button id="confirmar" onclick="Confirmar()"><a href="../../index.html">Confirmar</a></button>
         </div>
-        <div class="divBotao">
-            <div style="display: flex;flex-direction: column; align-items: center;justify-content: center;">
-                <h3 style=" color: #fff; ">Total a pagar é de: <p
-                        style="font-size: 20px; width: 20px; color:#ca125f; margin-top: -0.3rem;" id="resultado2"
-                        value=""></p>
-                </h3>
-                <h3 style="margin-top: -2rem;  color: #fff;"> dolores Por mês</h3>
-            </div>
-            <button id="confirmar">Confirmar</button>
-        </div>
+      
     </div>
     <script src="comb.js"></script>
 

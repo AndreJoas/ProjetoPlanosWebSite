@@ -77,3 +77,9 @@ function Clicar3() {
 }
 
 
+
+
+
+function Confirmar(){
+    alert("Seu pedido foi enviado, obrigado!!")
+}
